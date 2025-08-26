@@ -1,5 +1,5 @@
 {
-    "name": "f8-project-08",
+    "name": "boad_game_dao",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -20,5 +20,8 @@
     "homepage": "https://github.com/T-feww66/f8-project-08#readme",
     "dependencies": {
         "boxicons": "^2.1.4"
+    },
+    "devDependencies": {
+        "sass": "^1.91.0"
     }
 }

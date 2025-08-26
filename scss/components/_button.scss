@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:not(&__liked) &__icon--liked {
         display: none;
     }
@@ -44,7 +45,7 @@
     font-weight: 500;
     border-radius: 6px;
 
-    + .btn {
+    +.btn {
         &:not(.btn-not-margin) {
             margin-left: 20px;
         }
@@ -89,5 +90,23 @@
 
     &:hover {
         opacity: 0.8;
+    }
+
+    &--slider {
+        position: absolute;
+        bottom: 50px;
+        left: 190px;
+        padding: 0 30px;
+        width: 220px;
+        height: 50px;
+        font-size: 2rem;
+        font-weight: 700;
+        background: linear-gradient(90deg, #ffb700 0%, #ff7d00 100%);
+        box-shadow: 0px 4px 15px rgba(255, 125, 0, 0.3);
+
+        &:hover {
+            scale: 0.98;
+            transition: all 0.2s ease;
+        }
     }
 }
