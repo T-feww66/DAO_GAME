@@ -23,301 +23,259 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <!-- link scripts -->
     <script src="./assets/js/scripts.js"></script>
-    <title>BOARD ĐẢO GAME</title>
+    <title>BOARD GAME ĐẢO</title>
 </head>
-    <body>
-        <!-- Header -->
-        <header id="header" class="header"></header>
-        <script>
-            load("#header", "./template/header-logined.html");
-        </script>
-        <!-- Main -->
-        <main class="profile">
-            <div class="container">
-                <!-- Search -->
-                <div class="profile__container">
-                    <div class="search d-none d-md-flex">
-                        <input type="text" name="" placeholder="Search for item" id="" class="search__input" />
-                        <button class="search__btn">
-                            <img src="./assets/icons/search.svg" alt="" class="search__icon icon" />
-                        </button>
-                    </div>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./template/header-logined.html");
+    </script>
+    <!-- Main -->
+    <main class="profile">
+        <div class="container">
+            <!-- Search -->
+            <div class="profile__container">
+                <div class="search d-none d-md-flex">
+                    <input type="text" name="" placeholder="Search for item" id="" class="search__input" />
+                    <button class="search__btn">
+                        <img src="./assets/icons/search.svg" alt="" class="search__icon icon" />
+                    </button>
                 </div>
+            </div>
 
-                <div class="profile__container">
-                    <div class="row gy-3">
-                        <div class="col-3 col-xl-4 col-lg-5 col-md-12">
-                            <aside class="profile__sidebar">
-                                <div class="profile__user">
-                                    <img src="./assets/img/avatar/avatar-1.png" alt="" class="profile__user-avatar" />
-                                    <h1 class="profile__user-name">Imran Khan</h1>
-                                    <p class="profile__user-desc">Ngày đăng ký: 22/08/2025</p>
-                                </div>
+            <div class="profile__container">
+                <div class="row gy-3">
+                    <div class="col-3 col-xl-4 col-lg-5 col-md-12">
+                        <aside class="profile__sidebar">
+                            <div class="profile__user">
+                                <img src="./assets/img/avatar/avatar-1.png" alt="" class="profile__user-avatar" />
+                                <h1 class="profile__user-name">Imran Khan</h1>
+                                <p class="profile__user-desc">Ngày đăng ký: 22/08/2025</p>
+                            </div>
 
-                                <!-- Menu 1 -->
-                                <div class="profile__menu">
-                                    <h3 class="profile__menu-title">Quản lí tài khoản</h3>
-                                    <ul class="profile__menu-list">
-                                        <li>
-                                            <a href="./personal-info.html" class="profile__menu-link">
-                                                <span class="profile__menu-thumb">
-                                                    <img
-                                                        src="./assets/icons/profile.svg"
-                                                        alt=""
-                                                        class="icon profile__menu-icon"
-                                                    />
-                                                </span>
-                                                Thông tin cá nhân
-                                            </a>
-                                        </li>
+                            <!-- Menu 1 -->
+                            <div class="profile__menu">
+                                <h3 class="profile__menu-title">Quản lí tài khoản</h3>
+                                <ul class="profile__menu-list">
+                                    <li>
+                                        <a href="./personal-info.html" class="profile__menu-link">
+                                            <span class="profile__menu-thumb">
+                                                <img src="./assets/icons/profile.svg" alt=""
+                                                    class="icon profile__menu-icon" />
+                                            </span>
+                                            Thông tin cá nhân
+                                        </a>
+                                    </li>
 
-                                        <li>
-                                            <a href="#!" class="profile__menu-link">
-                                                <span class="profile__menu-thumb">
-                                                    <img
-                                                        src="./assets/icons/location.svg"
-                                                        alt=""
-                                                        class="icon profile__menu-icon"
-                                                    />
-                                                </span>
-                                                Địa chỉ
-                                            </a>
-                                        </li>
+                                    <li>
+                                        <a href="#!" class="profile__menu-link">
+                                            <span class="profile__menu-thumb">
+                                                <img src="./assets/icons/location.svg" alt=""
+                                                    class="icon profile__menu-icon" />
+                                            </span>
+                                            Địa chỉ
+                                        </a>
+                                    </li>
 
-                                        <li>
-                                            <a href="#!" class="profile__menu-link">
-                                                <span class="profile__menu-thumb">
-                                                    <img
-                                                        src="./assets/icons/message.svg"
-                                                        alt=""
-                                                        class="icon profile__menu-icon"
-                                                    />
-                                                </span>
-                                                Thông tin liên lạc và quyền riêng tư
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                    <li>
+                                        <a href="#!" class="profile__menu-link">
+                                            <span class="profile__menu-thumb">
+                                                <img src="./assets/icons/message.svg" alt=""
+                                                    class="icon profile__menu-icon" />
+                                            </span>
+                                            Thông tin liên lạc và quyền riêng tư
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
 
-                                <!-- Menu 2 -->
-                                <div class="profile__menu">
-                                    <h3 class="profile__menu-title">Hàng hoá của tôi</h3>
-                                    <ul class="profile__menu-list">
-                                        <li>
-                                            <a href="#!" class="profile__menu-link">
-                                                <span class="profile__menu-thumb">
-                                                    <img
-                                                        src="./assets/icons/download.svg"
-                                                        alt=""
-                                                        class="icon profile__menu-icon"
-                                                    />
-                                                </span>
-                                                Sắp xếp lại
-                                            </a>
-                                        </li>
+                            <!-- Menu 2 -->
+                            <div class="profile__menu">
+                                <h3 class="profile__menu-title">Hàng hoá của tôi</h3>
+                                <ul class="profile__menu-list">
+                                    <li>
+                                        <a href="#!" class="profile__menu-link">
+                                            <span class="profile__menu-thumb">
+                                                <img src="./assets/icons/download.svg" alt=""
+                                                    class="icon profile__menu-icon" />
+                                            </span>
+                                            Sắp xếp lại
+                                        </a>
+                                    </li>
 
-                                        <li>
-                                            <a href="#!" class="profile__menu-link">
-                                                <span class="profile__menu-thumb">
-                                                    <img
-                                                        src="./assets/icons/hearth.svg"
-                                                        alt=""
-                                                        class="icon profile__menu-icon"
-                                                    />
-                                                </span>
-                                                Danh sách yêu thích
-                                            </a>
-                                        </li>
+                                    <li>
+                                        <a href="#!" class="profile__menu-link">
+                                            <span class="profile__menu-thumb">
+                                                <img src="./assets/icons/hearth.svg" alt=""
+                                                    class="icon profile__menu-icon" />
+                                            </span>
+                                            Danh sách yêu thích
+                                        </a>
+                                    </li>
 
-                                        <li>
-                                            <a href="#!" class="profile__menu-link">
-                                                <span class="profile__menu-thumb">
-                                                    <img
-                                                        src="./assets/icons/gift-2.svg"
-                                                        alt=""
-                                                        class="icon profile__menu-icon"
-                                                    />
-                                                </span>
-                                                Sổ đăng ký 
-                                                
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Menu 4 -->
-                                <div class="profile__menu">
-                                    <h3 class="profile__menu-title">Dịch vụ khách hàng</h3>
-                                    <ul class="profile__menu-list">
-                                        <li>
-                                            <a href="#!" class="profile__menu-link">
-                                                <span class="profile__menu-thumb">
-                                                    <img
-                                                        src="./assets/icons/help.svg"
-                                                        alt=""
-                                                        class="icon profile__menu-icon"
-                                                    />
-                                                </span>
-                                                Trợ giúp
-                                            </a>
-                                        </li>
+                                    <li>
+                                        <a href="#!" class="profile__menu-link">
+                                            <span class="profile__menu-thumb">
+                                                <img src="./assets/icons/gift-2.svg" alt=""
+                                                    class="icon profile__menu-icon" />
+                                            </span>
+                                            Sổ đăng ký
 
-                                        <li>
-                                            <a href="#!" class="profile__menu-link">
-                                                <span class="profile__menu-thumb">
-                                                    <img
-                                                        src="./assets/icons/dange-info.svg"
-                                                        alt=""
-                                                        class="icon profile__menu-icon"
-                                                    />
-                                                </span>
-                                                Điều khoản và điều kiện
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </aside>
-                        </div>
-                        <div class="col-9 col-xl-8 col-lg-7 col-md-12">
-                            <div class="cart">
-                                <div class="row gy-3">
-                                    <!-- My wallet -->
-                                    <div class="col-12">
-                                        <h2 class="cart__heading">Ví của tôi</h2>
-                                        <p class="cart__desc payment-card__desc">Phương thức thanh toán</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Menu 4 -->
+                            <div class="profile__menu">
+                                <h3 class="profile__menu-title">Dịch vụ khách hàng</h3>
+                                <ul class="profile__menu-list">
+                                    <li>
+                                        <a href="#!" class="profile__menu-link">
+                                            <span class="profile__menu-thumb">
+                                                <img src="./assets/icons/help.svg" alt=""
+                                                    class="icon profile__menu-icon" />
+                                            </span>
+                                            Trợ giúp
+                                        </a>
+                                    </li>
 
-                                        <div class="payment-card__list">
-                                            <div class="row row-cols-3 row-cols-xl-2 row-cols-lg-1">
-                                                <div class="col">
-                                                    <article
-                                                        class="payment-card__item"
-                                                        style="--payment-card-bg: #1e2e69"
-                                                    >
-                                                        <div class="payment-card__top">
-                                                            <img src="./assets/img/payment-card/plane.svg" alt="" />
-                                                            <p class="payment-card__title">FeatherCard</p>
-                                                        </div>
+                                    <li>
+                                        <a href="#!" class="profile__menu-link">
+                                            <span class="profile__menu-thumb">
+                                                <img src="./assets/icons/dange-info.svg" alt=""
+                                                    class="icon profile__menu-icon" />
+                                            </span>
+                                            Điều khoản và điều kiện
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-9 col-xl-8 col-lg-7 col-md-12">
+                        <div class="cart">
+                            <div class="row gy-3">
+                                <!-- My wallet -->
+                                <div class="col-12">
+                                    <h2 class="cart__heading">Ví của tôi</h2>
+                                    <p class="cart__desc payment-card__desc">Phương thức thanh toán</p>
 
-                                                        <span class="payment-card__number">1234 4567 8901 2221</span>
+                                    <div class="payment-card__list">
+                                        <div class="row row-cols-3 row-cols-xl-2 row-cols-lg-1">
+                                            <div class="col">
+                                                <article class="payment-card__item" style="--payment-card-bg: #1e2e69">
+                                                    <div class="payment-card__top">
+                                                        <img src="./assets/img/payment-card/plane.svg" alt="" />
+                                                        <p class="payment-card__title">FeatherCard</p>
+                                                    </div>
 
-                                                        <div class="payment-card__bottom">
-                                                            <div class="payment-card__info">
-                                                                <div class="payment-card__wrap">
-                                                                    <span class="payment-card__name">Card Holder</span>
-                                                                    <span class="payment-card__value">Imran Khan</span>
-                                                                </div>
+                                                    <span class="payment-card__number">1234 4567 8901 2221</span>
 
-                                                                <div class="payment-card__wrap">
-                                                                    <span class="payment-card__name">Expired</span>
-                                                                    <span class="payment-card__value">10/22</span>
-                                                                </div>
+                                                    <div class="payment-card__bottom">
+                                                        <div class="payment-card__info">
+                                                            <div class="payment-card__wrap">
+                                                                <span class="payment-card__name">Card Holder</span>
+                                                                <span class="payment-card__value">Imran Khan</span>
                                                             </div>
 
-                                                            <img
-                                                                src="./assets/img/payment-card/payment-card-icon.svg"
-                                                                alt=""
-                                                                class="payment-card__icon"
-                                                            />
-                                                        </div>
-                                                        <img
-                                                            src="./assets/img/payment-card/plane-bg.png"
-                                                            alt=""
-                                                            class="payment-card__bg"
-                                                        />
-                                                    </article>
-                                                </div>
-                                                <div class="col">
-                                                    <article
-                                                        class="payment-card__item"
-                                                        style="--payment-card-bg: #354151"
-                                                    >
-                                                        <div class="payment-card__top">
-                                                            <img src="./assets/img/payment-card/leaf.svg" alt="" />
-                                                            <p class="payment-card__title">FeatherCard</p>
+                                                            <div class="payment-card__wrap">
+                                                                <span class="payment-card__name">Expired</span>
+                                                                <span class="payment-card__value">10/22</span>
+                                                            </div>
                                                         </div>
 
-                                                        <span class="payment-card__number">2221 4567 8901 3544</span>
+                                                        <img src="./assets/img/payment-card/payment-card-icon.svg"
+                                                            alt="" class="payment-card__icon" />
+                                                    </div>
+                                                    <img src="./assets/img/payment-card/plane-bg.png" alt=""
+                                                        class="payment-card__bg" />
+                                                </article>
+                                            </div>
+                                            <div class="col">
+                                                <article class="payment-card__item" style="--payment-card-bg: #354151">
+                                                    <div class="payment-card__top">
+                                                        <img src="./assets/img/payment-card/leaf.svg" alt="" />
+                                                        <p class="payment-card__title">FeatherCard</p>
+                                                    </div>
 
-                                                        <div class="payment-card__bottom">
-                                                            <div class="payment-card__info">
-                                                                <div class="payment-card__wrap">
-                                                                    <span class="payment-card__name">Card Holder</span>
-                                                                    <span class="payment-card__value">Tfeww</span>
-                                                                </div>
+                                                    <span class="payment-card__number">2221 4567 8901 3544</span>
 
-                                                                <div class="payment-card__wrap">
-                                                                    <span class="payment-card__name">Expired</span>
-                                                                    <span class="payment-card__value">12/22</span>
-                                                                </div>
+                                                    <div class="payment-card__bottom">
+                                                        <div class="payment-card__info">
+                                                            <div class="payment-card__wrap">
+                                                                <span class="payment-card__name">Card Holder</span>
+                                                                <span class="payment-card__value">Tfeww</span>
                                                             </div>
 
-                                                            <img
-                                                                src="./assets/img/payment-card/payment-card-icon.svg"
-                                                                alt=""
-                                                                class="payment-card__icon"
-                                                            />
+                                                            <div class="payment-card__wrap">
+                                                                <span class="payment-card__name">Expired</span>
+                                                                <span class="payment-card__value">12/22</span>
+                                                            </div>
                                                         </div>
-                                                        <img
-                                                            src="./assets/img/payment-card/leaf-bg.png"
-                                                            alt=""
-                                                            class="payment-card__bg"
-                                                        />
-                                                    </article>
-                                                </div>
-                                                <div class="col">
-                                                    <a href="./add-new-card.html" class="payment-card__new">
-                                                        <img src="./assets/icons/plus.svg" alt="" class="icon" />
-                                                        <p class="payment-card__new-desc">Thêm thẻ mới</p>
-                                                    </a>
-                                                </div>
+
+                                                        <img src="./assets/img/payment-card/payment-card-icon.svg"
+                                                            alt="" class="payment-card__icon" />
+                                                    </div>
+                                                    <img src="./assets/img/payment-card/leaf-bg.png" alt=""
+                                                        class="payment-card__bg" />
+                                                </article>
+                                            </div>
+                                            <div class="col">
+                                                <a href="./add-new-card.html" class="payment-card__new">
+                                                    <img src="./assets/icons/plus.svg" alt="" class="icon" />
+                                                    <p class="payment-card__new-desc">Thêm thẻ mới</p>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <!-- Account info -->
-                                    <div class="col-12">
-                                        <h2 class="cart__heading">Thông tin tài khoản</h2>
-                                        <p class="cart__desc payment-card__desc">
-                                            Địa chỉ, thông tin liên hệ và mật khẩu
-                                        </p>
+                                <!-- Account info -->
+                                <div class="col-12">
+                                    <h2 class="cart__heading">Thông tin tài khoản</h2>
+                                    <p class="cart__desc payment-card__desc">
+                                        Địa chỉ, thông tin liên hệ và mật khẩu
+                                    </p>
 
-                                        <div class="row row-cols-2 row-cols-lg-1">
-                                            <div class="col">
-                                                <article class="account-info">
-                                                    <div class="account-info__icon">
-                                                        <img src="./assets/icons/message.svg" alt="" class="icon" />
-                                                    </div>
-                                                    <div class="account-info__content">
-                                                        <h3 class="account-info__title">Email</h3>
-                                                        <p class="account-info__desc">tarek97.ta@gmail.com</p>
-                                                    </div>
-                                                </article>
-                                            </div>
+                                    <div class="row row-cols-2 row-cols-lg-1">
+                                        <div class="col">
+                                            <article class="account-info">
+                                                <div class="account-info__icon">
+                                                    <img src="./assets/icons/message.svg" alt="" class="icon" />
+                                                </div>
+                                                <div class="account-info__content">
+                                                    <h3 class="account-info__title">Email</h3>
+                                                    <p class="account-info__desc">tarek97.ta@gmail.com</p>
+                                                </div>
+                                            </article>
+                                        </div>
 
-                                            <div class="col">
-                                                <article class="account-info">
-                                                    <div class="account-info__icon">
-                                                        <img src="./assets/icons/phone.svg" alt="" class="icon" />
-                                                    </div>
-                                                    <div class="account-info__content">
-                                                        <h3 class="account-info__title">Số điện thoại</h3>
-                                                        <p class="account-info__desc">+000 11122 2345 657</p>
-                                                    </div>
-                                                </article>
-                                            </div>
+                                        <div class="col">
+                                            <article class="account-info">
+                                                <div class="account-info__icon">
+                                                    <img src="./assets/icons/phone.svg" alt="" class="icon" />
+                                                </div>
+                                                <div class="account-info__content">
+                                                    <h3 class="account-info__title">Số điện thoại</h3>
+                                                    <p class="account-info__desc">+000 11122 2345 657</p>
+                                                </div>
+                                            </article>
+                                        </div>
 
-                                            <div class="col">
-                                                <article class="account-info">
-                                                    <div class="account-info__icon">
-                                                        <img src="./assets/icons/location.svg" alt="" class="icon" />
-                                                    </div>
-                                                    <div class="account-info__content">
-                                                        <h3 class="account-info__title">Địa chỉ</h3>
-                                                        <p class="account-info__desc">
-                                                            Bangladesh Embassy, Washington, DC 20008
-                                                        </p>
-                                                    </div>
-                                                </article>
-                                            </div>
+                                        <div class="col">
+                                            <article class="account-info">
+                                                <div class="account-info__icon">
+                                                    <img src="./assets/icons/location.svg" alt="" class="icon" />
+                                                </div>
+                                                <div class="account-info__content">
+                                                    <h3 class="account-info__title">Địa chỉ</h3>
+                                                    <p class="account-info__desc">
+                                                        Bangladesh Embassy, Washington, DC 20008
+                                                    </p>
+                                                </div>
+                                            </article>
                                         </div>
                                     </div>
                                 </div>
@@ -326,12 +284,14 @@
                     </div>
                 </div>
             </div>
-        </main>
-        <!-- Footer -->
-        <footer id="footer" class="footer"></footer>
-        <script>
-            load("#footer", "./template/footer.html");
-        </script>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer" class="footer"></footer>
+    <script>
+        load("#footer", "./template/footer.html");
+    </script>
 
-    </body>
+</body>
+
 </html>
