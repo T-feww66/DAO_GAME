@@ -166,6 +166,184 @@
             </div>
         </section>
     </div>
+
+    <!-- Chat Support Button -->
+    <div id="chat-support">
+        <button id="chat-btn" class="chat-btn" style="background: none; box-shadow: none;">
+            <img src="./assets/img/product/card/macot-3.png" alt="Chat"
+                style="width:64px;height:64px;border-radius:50%;" />
+        </button>
+        <div id="chat-window" class="chat-window">
+            <div class="chat-header" style="background: #fff; color: #333;">
+                <span style="color: #007bff;">Chăm sóc khách hàng</span>
+                <button id="close-chat" class="close-chat" style="background: none; border: none;">
+                    <i class='bx bx-x' style="font-size: 24px; color: #007bff;"></i>
+                </button>
+            </div>
+            <div class="chat-body">
+                <div class="chat-message bot">Xin chào! Bạn cần hỗ trợ gì?</div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" class="chat-input" placeholder="Nhập tin nhắn..." />
+                <button class="send-btn" style="background: none; border: none; margin-left: 8px;">
+                    <i class='bx bx-send' style="font-size: 24px; color: #007bff;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <style>
+        #chat-support {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            z-index: 9999;
+        }
+
+        .chat-btn {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            font-size: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .chat-btn:hover {
+            background: #0056b3;
+        }
+
+        .chat-window {
+            display: none;
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+            width: 320px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        .chat-header {
+            background: #007bff;
+            color: #fff;
+            padding: 12px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .close-chat {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .chat-body {
+            padding: 12px;
+            min-height: 80px;
+            max-height: 180px;
+            overflow-y: auto;
+            background: #f6f6f6;
+        }
+
+        .chat-message {
+            margin-bottom: 8px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            background: #e9ecef;
+            font-size: 0.95rem;
+        }
+
+        .chat-message.bot {
+            background: #e3f0ff;
+            color: #007bff;
+        }
+
+        .chat-footer {
+            display: flex;
+            border-top: 1px solid #eee;
+            padding: 8px;
+            background: #fff;
+        }
+
+        .chat-input {
+            flex: 1;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 6px 10px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .send-btn {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            margin-left: 8px;
+            padding: 0 16px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .send-btn:hover {
+            background: #0056b3;
+        }
+
+        @media (max-width: 400px) {
+            .chat-window {
+                width: 95vw;
+                right: -16px;
+            }
+        }
+    </style>
+    <script>
+        const chatBtn = document.getElementById('chat-btn');
+        const chatWindow = document.getElementById('chat-window');
+        const closeChat = document.getElementById('close-chat');
+        const chatInput = document.querySelector('.chat-input');
+        const sendBtn = document.querySelector('.send-btn');
+        const chatBody = document.querySelector('.chat-body');
+
+        chatBtn.onclick = () => {
+            chatWindow.style.display = 'flex';
+            chatInput.focus();
+        };
+        closeChat.onclick = () => {
+            chatWindow.style.display = 'none';
+        };
+        sendBtn.onclick = () => {
+            const msg = chatInput.value.trim();
+            if (msg) {
+                const div = document.createElement('div');
+                div.className = 'chat-message';
+                div.textContent = msg;
+                chatBody.appendChild(div);
+                chatInput.value = '';
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }
+        };
+        chatInput.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') sendBtn.click();
+        });
+    </script>
     <!-- Footer -->
     <footer id="footer" class="footer"></footer>
     <script>
